@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7A1AE072-C11A-4A3A-A1C8-81F151E55B09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colosoft.IO", "src\Colosoft.IO\Colosoft.IO.csproj", "{ED14AF6C-0B4C-4C5A-9861-54E74A92B964}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colosoft.IO.Storage.Blazor", "src\Colosoft.IO.Storage.Blazor\Colosoft.IO.Storage.Blazor.csproj", "{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED14AF6C-0B4C-4C5A-9861-54E74A92B964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED14AF6C-0B4C-4C5A-9861-54E74A92B964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED14AF6C-0B4C-4C5A-9861-54E74A92B964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED14AF6C-0B4C-4C5A-9861-54E74A92B964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED14AF6C-0B4C-4C5A-9861-54E74A92B964} = {7A1AE072-C11A-4A3A-A1C8-81F151E55B09}
+		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF} = {7A1AE072-C11A-4A3A-A1C8-81F151E55B09}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0DAAB0D-667F-4F8D-97CD-481106850CFF}
+	EndGlobalSection
+EndGlobal
