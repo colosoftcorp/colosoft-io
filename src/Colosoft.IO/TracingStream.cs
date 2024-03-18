@@ -5,6 +5,7 @@ namespace Colosoft.IO
     public class TracingStream : System.IO.Stream
     {
         private readonly bool traceContent;
+        private readonly bool leaveOpen;
         private byte[] dataRead;
         private byte[] dataWritten;
         private long numBytesRead;
@@ -52,19 +53,30 @@ namespace Colosoft.IO
         }
 
         public TracingStream(System.IO.Stream stream)
-            : this(stream, true)
+            : this(stream, false)
         {
         }
 
         public TracingStream(System.IO.Stream stream, bool traceContent)
+            : this(stream, traceContent, false)
+        {
+        }
+
+        public TracingStream(System.IO.Stream stream, bool traceContent, bool leaveOpen)
         {
             this.dataRead = Array.Empty<byte>();
             this.dataWritten = Array.Empty<byte>();
             this.stream = stream;
             this.traceContent = traceContent;
+            this.leaveOpen = leaveOpen;
         }
 
         public TracingStream(System.Net.HttpWebResponse response, bool traceContent)
+            : this(response, traceContent, false)
+        {
+        }
+
+        public TracingStream(System.Net.HttpWebResponse response, bool traceContent, bool leaveOpen)
             : this(response?.GetResponseStream(), traceContent)
         {
             this.response = response;
@@ -208,6 +220,16 @@ namespace Colosoft.IO
 
         protected virtual void OnNumBytesRead()
         {
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+            if (!this.leaveOpen)
+            {
+                this.stream.Dispose();
+                this.response?.Dispose();
+            }
         }
     }
 }

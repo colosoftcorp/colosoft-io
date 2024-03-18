@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colosoft.IO", "src\Colosoft
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colosoft.IO.Storage.Blazor", "src\Colosoft.IO.Storage.Blazor\Colosoft.IO.Storage.Blazor.csproj", "{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{80F6214B-9167-4B2C-80B9-2C73B8F8DCE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colosoft.IO.Test", "tests\Colosoft.IO.Test\Colosoft.IO.Test.csproj", "{96AEB687-4416-4246-96AE-32C8F8B1C830}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96AEB687-4416-4246-96AE-32C8F8B1C830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96AEB687-4416-4246-96AE-32C8F8B1C830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96AEB687-4416-4246-96AE-32C8F8B1C830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96AEB687-4416-4246-96AE-32C8F8B1C830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ED14AF6C-0B4C-4C5A-9861-54E74A92B964} = {7A1AE072-C11A-4A3A-A1C8-81F151E55B09}
 		{6ED0AB44-4D09-408A-A54B-86CFFA82FEDF} = {7A1AE072-C11A-4A3A-A1C8-81F151E55B09}
+		{96AEB687-4416-4246-96AE-32C8F8B1C830} = {80F6214B-9167-4B2C-80B9-2C73B8F8DCE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F0DAAB0D-667F-4F8D-97CD-481106850CFF}
